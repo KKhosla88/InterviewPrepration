@@ -2,7 +2,7 @@ package HashMaps;
 import java.util.*;
 
 public class PairOf0 {
-    public static void pairOf0(int arr[]){
+      private static void pairOf0(int arr[]){
         HashMap<Integer, Integer> integerHashMap = new HashMap<>();
         ArrayList<Integer> ar = new ArrayList<>();
 

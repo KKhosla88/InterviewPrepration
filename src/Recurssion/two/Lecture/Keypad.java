@@ -4,8 +4,7 @@ import java.util.Scanner;
 
 public class Keypad {
     public static String[] keypad(int n)
-    {
-        if(n==0||n==1)
+    { if(n==0||n==1)
         {
             String a[]={""};
             return a;
@@ -56,7 +55,6 @@ public class Keypad {
         int a=b%10;
         String z[]=keypad(a);
         String ans[] = new String[smallAns.length*z.length];
-
         int k = 0;
         for(int i = 0; i < z.length; i++)
         {
