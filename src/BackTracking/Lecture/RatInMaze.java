@@ -2,15 +2,17 @@ package BackTracking.Lecture;
 import java.util.Scanner;
 
 public class RatInMaze {
-    public static boolean check(int maze[][]){
+    public static boolean check(int maze[][])
+    {
+        int n=maze.length;
 
-        int[][] path = new int[maze.length][maze[0].length];
+        int[][] path = new int[n][n];
         boolean ans = checkMaze(maze,0,0,path);
         return ans;
 
     }
     private static boolean checkMaze(int [][] maze,int i ,int j,int [][] path){
-        if (i < 0 || i >= maze.length || j < 0 || j >= maze.length || maze[i][j] == 0 || path[i][j] ==1){
+        if (i < 0 || i >=n || j < 0 || j >= n || maze[i][j] == 0 || path[i][j] ==1){
             return false;
         }
 
